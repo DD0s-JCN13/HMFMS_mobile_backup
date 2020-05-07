@@ -9,7 +9,7 @@ import android.widget.TextView;
 import java.util.HashMap;
 
 import androidx.appcompat.app.AppCompatActivity;
-import cathay.hospital.hmfmsmobile.R;
+import cathay.hospital.hmfmsmobile.activity.R;
 import cathay.hospital.hmfmsmobile.model.SharedPreferencesModel;
 import cathay.hospital.hmfmsmobile.model.bean.LoginData;
 import cathay.hospital.hmfmsmobile.util.AES;
@@ -90,7 +90,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             sharedMap.put("userName", loginData.getUserName());
                             sharedPrefsModel.setSharedPrefsData(sharedMap);
 
-                            UtilTools.goActivity(this,HomeActivity.class);
+                            UtilTools.goActivity(this,HomepageActivity.class);
                         }else{
                             textError.setText(R.string.loginError);
                         }
