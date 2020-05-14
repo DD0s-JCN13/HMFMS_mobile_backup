@@ -8,7 +8,6 @@
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <!--
-
 <uses-permission
         android:name="android.permission.CAMERA"
         android:required="true" />
@@ -43,7 +42,10 @@
             android:name=".ScannerActivity"
             android:label="@string/scanner"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ScanningActivity"/>
+        <activity
+            android:name=".ScanningActivity"
+            android:label="@string/scanner"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".CheckListActivity"
             android:label="@string/title_activity_checklist"
